@@ -38,4 +38,4 @@ The localStorage web API was also used in order to save the user's 3 most recent
 
 ## Screenshots
 
-![ScreenShot](./screenshot.png)
+![ScreenSht](./screenshot.png)
