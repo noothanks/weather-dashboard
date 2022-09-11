@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main class="flex-row justify-space-between">
+        <div class="col-12 col-md-4">
+          <div class="card">
+            <h3 class="card-header text-uppercase">Search By City</h3>
+            <form id="city-form" class="card-body">
+              <label class="form-label" for="city">City</label>
+              <input name="city" id="city" type="text" autofocus="true" class="form-input" />
+              <button type="submit" class="btn">Get Weather Forecast</button>
+            </form>
+          </div>
+    
+          <div class="card">
+            <h3 class="card-header text-uppercase">Search By Recent</h3>
+            <div id="language-buttons" class="card-body">
+              <button data-language="javascript" class="btn">JavaScript</button>
+              <button data-language="html" class="btn">HTML</button>
+              <button data-language="css" class="btn">CSS</button>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-12 col-md-8">
+          <h2 class="subtitle">Showing Forecast for: <span id="city-search-term"></span></h2>
+          <div id="forecast-container" class="list-group">
+    
+          </div>
+        </div>
+      </main>
+</body>
+</html>
